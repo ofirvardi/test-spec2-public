@@ -36,7 +36,7 @@ grains:
       source:
         path: github.com/QualiNext/test-spec2-public.git//terraform/simple-tf-module
       host:
-        cloud-account: aws
+        cloud-account: aws-dev2
         compute-service: kubernetes-testing
       inputs:
         - test_input1: env-input-{{.inputs.input1}}
@@ -54,7 +54,7 @@ grains:
       source:
         path: https://github.com/bitnami/charts.git//bitnami/node
       host:
-        cloud-account: aws
+        cloud-account: aws-dev2
         compute-service: kubernetes-testing
         # region: eu-west-1
         # os: <os_moniker>
